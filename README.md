@@ -7,11 +7,11 @@ A library that delays async XHR and Fetch requests until an event is triggered.
 ### Usage
 Import the module into your application's entry point (EG `main.js`)
 
-**ES6:** 
+**ES6:**
 
 	import XHRInterceptor from 'xhr-interceptor'
 
-**ES5: ** 
+**ES5:**
 
 	var XHRInterceptor = require('xhr-interceptor');
 
@@ -19,21 +19,28 @@ Import the module into your application's entry point (EG `main.js`)
 Initilise the interceptor to start delaying requests:
 
 	XHRInterceptor({});
-	
-==**NOTE: **Ensure you initialise the interceptor *before* any XHR or Fetch requests are triggered by your application code.	==
+
+**NOTE:** Ensure you initialise the interceptor *before* any XHR or Fetch requests are triggered by your application code.
 
 ### Options
 
 The interceptor accepts the following optional arguments:
 
-**readyEvent** *(default = `DOMContentLoaded`)*
+---
+
+**`readyEvent`**
 The event it should listen for. Standard or custom events are supported.
+*default = `DOMContentLoaded`*
 
-**whiteList** *(default = `[]`)*
-An array of strings. Any request url containing at least one of these strings will be passed through. 
+**`whiteList`**
+An array of strings. Any request url containing at least one of these strings will be passed through.
+*default = `[]`*
 
-**allowCurrentHost** *(default = `false`)*
-An array of strings. Any request url containing at least one of these strings will be passed through. 
+**`allowCurrentHost`**
+An array of strings. Any request url containing at least one of these strings will be passed through.
+*default = `false`*
+
+---
 
 ### Basic Example
 
@@ -42,13 +49,13 @@ An array of strings. Any request url containing at least one of these strings wi
 		whiteList: ['customhost.com', 'analytics.google.com'],
 		allowCurrentHost: true
 	});
-	
+
 ### Example using a Custom Event
 
 	xhrInterceptor({
 		readyEvent: 'customReadyEvent',
 	});
-	
+
 	const event = new CustomEvent("customReadyEvent");
 	window.dispatchEvent(event);
 
