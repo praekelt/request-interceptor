@@ -12,12 +12,12 @@ let whiteListedUrls = [];
 let currentHostIsAllowed = false;
 
 /**
- * XHR Interceptor
+ * Request Interceptor
  * @param {string} readyEvent Event which should trigger delayed requests. Defaults to DOMContentLoaded
  * @param {Array} whiteList A list of domains/urls which are exempt.
  * @param {boolean} allowCurrentHost Should all requests on current domain be exempt.
  */
-const xhrInterceptor = ({
+const requestInterceptor = ({
     readyEvent = 'DOMContentLoaded',
     whiteList = [],
     allowCurrentHost = false

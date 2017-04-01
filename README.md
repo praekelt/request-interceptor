@@ -1,24 +1,24 @@
-# xhr-interceptor
+# request-interceptor
 A library that delays async XHR and Fetch requests until an event is triggered.
 
 ### Installation
-`npm install xhr-interceptor`
+`npm install request-interceptor`
 
 ### Usage
 Import the module into your application's entry point (EG `main.js`)
 
 **ES6:**
 
-	import XHRInterceptor from 'xhr-interceptor'
+	import RequestInterceptor from 'xhr-interceptor'
 
 **ES5:**
 
-	var XHRInterceptor = require('xhr-interceptor');
+	var RequestInterceptor = require('xhr-interceptor');
 
 
 Initilise the interceptor to start delaying requests:
 
-	XHRInterceptor({});
+	RequestInterceptor({});
 
 **NOTE:** Ensure you initialise the interceptor *before* any XHR or Fetch requests are triggered by your application code.
 
