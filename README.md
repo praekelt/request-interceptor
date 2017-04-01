@@ -9,11 +9,11 @@ Import the module into your application's entry point (EG `main.js`)
 
 **ES6:**
 
-	import RequestInterceptor from 'xhr-interceptor'
+	import RequestInterceptor from 'request-interceptor'
 
 **ES5:**
 
-	var RequestInterceptor = require('xhr-interceptor');
+	var RequestInterceptor = require('request-interceptor');
 
 
 Initilise the interceptor to start delaying requests:
