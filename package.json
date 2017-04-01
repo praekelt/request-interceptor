@@ -1,0 +1,37 @@
+{
+  "name": "xhr-interceptor",
+  "version": "1.0.0",
+  "description": "A library that delays async XHR requests until some condition is met.",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build --ignore '**/*.test.js'",
+    "test": "jest"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praekelt/xhr-interceptor.git"
+  },
+  "keywords": [
+    "xhr",
+    "ajax",
+    "fetch"
+  ],
+  "author": "Peter Ringelmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/praekelt/xhr-interceptor/issues"
+  },
+  "homepage": "https://github.com/praekelt/xhr-interceptor#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-latest": "^6.24.0",
+    "jest": "^19.0.2",
+    "watch": "^1.0.2"
+  }
+}
