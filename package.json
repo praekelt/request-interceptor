@@ -1,6 +1,6 @@
 {
   "name": "request-interceptor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that delays async XHR requests until some condition is met.",
   "main": "build/index.js",
   "scripts": {
