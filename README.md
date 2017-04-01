@@ -44,7 +44,7 @@ An array of strings. Any request url containing at least one of these strings wi
 
 ### Basic Example
 
-	xhrInterceptor({
+	RequestInterceptor({
 		readyEvent: 'readystatechange',
 		whiteList: ['customhost.com', 'analytics.google.com'],
 		allowCurrentHost: true
@@ -52,7 +52,7 @@ An array of strings. Any request url containing at least one of these strings wi
 
 ### Example using a Custom Event
 
-	xhrInterceptor({
+	RequestInterceptor({
 		readyEvent: 'customReadyEvent',
 	});
 
