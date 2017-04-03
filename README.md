@@ -37,7 +37,7 @@ An array of strings. Any request url containing at least one of these strings wi
 *default = `[]`*
 
 **`allowCurrentHost`**
-An array of strings. Any request url containing at least one of these strings will be passed through.
+A boolean value indicating whether or not requests from the current domain should be passed through.
 *default = `false`*
 
 ---
